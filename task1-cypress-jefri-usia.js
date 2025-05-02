@@ -4,13 +4,6 @@ function cekUsia() {
     let arrayKelompokUsia = [];
     let kelompokUsia;
 
-    let countsUsia = {
-        Anak: 0,
-        Remaja: 0,
-        Dewasa: 0,
-        Lansia: 0
-    };
-
     let kategoriUsia = [{
             kategori: "Anak-anak",
             jumlah: 0
@@ -50,29 +43,21 @@ function cekUsia() {
         switch (true) {
             // Anak-anak    
             case (usia >= 0  && usia <= 12):
-                kelompokUsia = "Anak";
-    
                 kategoriUsia[0].jumlah += 1;
                 break;
     
             // Remaja 
             case (usia >= 13  && usia <= 17):
-                kelompokUsia = "Remaja";
-    
                 kategoriUsia[1].jumlah += 1;
                 break;
     
             // Dewasa
             case (usia >= 18  && usia <= 59):
-                kelompokUsia = "Dewasa";
-    
                 kategoriUsia[2].jumlah += 1;
                 break;
     
             // Lansia    
             case (usia >= 60):
-                kelompokUsia = "Lansia";
-    
                 kategoriUsia[3].jumlah += 1;
                 break;
 
